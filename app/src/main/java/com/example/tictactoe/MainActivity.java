@@ -14,5 +14,8 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        getSupportActionBar().setTitle(" TicTacToe 3 in a Row!");
+        getSupportActionBar().setIcon(getDrawable(R.drawable.ic_tictactoe));
     }
 }
