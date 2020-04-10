@@ -1,3 +1,5 @@
+![Android CI](https://github.com/arcum-omni/TicTacToe/workflows/Android%20CI/badge.svg)
+
 # TicTacToe
 This is a project for CPW252 Phone Programming at [Clover Park Technical College](http://www.cptc.edu/programs/computer-programming).
 
