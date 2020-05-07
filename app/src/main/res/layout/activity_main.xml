@@ -13,6 +13,7 @@
         layout="@layout/toolbar"/>
 
     <TextView
+        android:id="@+id/game_messages"
         android:layout_width="315dp"
         android:layout_height="54dp"
         android:layout_alignParentStart="true"
@@ -22,79 +23,20 @@
         android:layout_marginStart="48dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="125dp"
-        android:text="Game Messages"
+        android:text="@string/game_messages"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button1"
         android:layout_width="115dp"
         android:layout_height="115dp"
         android:layout_below="@+id/toolbar"
         android:layout_alignParentStart="true"
         android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_below="@+id/button"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="5dp"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_below="@+id/button4"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="5dp"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_below="@+id/button4"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_toEndOf="@+id/button10"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_below="@+id/button4"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_toEndOf="@+id/button6"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_below="@+id/button2"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_toEndOf="@+id/button4"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_below="@+id/button3"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_toEndOf="@+id/button7"
-        android:text="Button" />
+        android:onClick="onClick"
+        android:textSize="36sp" />
 
     <Button
         android:id="@+id/button2"
@@ -103,8 +45,9 @@
         android:layout_below="@+id/toolbar"
         android:layout_marginStart="5dp"
         android:layout_marginTop="25dp"
-        android:layout_toEndOf="@+id/button"
-        android:text="Button" />
+        android:layout_toEndOf="@+id/button1"
+        android:onClick="onClick"
+        android:textSize="36sp" />
 
     <Button
         android:id="@+id/button3"
@@ -114,10 +57,77 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="25dp"
         android:layout_toEndOf="@+id/button2"
-        android:text="Button" />
+        android:onClick="onClick"
+        android:textSize="36sp" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/button4"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_below="@+id/button1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:onClick="onClick"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_below="@+id/button2"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/button4"
+        android:onClick="onClick"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_below="@+id/button3"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/button5"
+        android:onClick="onClick"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:onClick="onClick"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_below="@+id/button4"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/button7"
+        android:onClick="onClick"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_below="@+id/button4"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/button8"
+        android:onClick="onClick"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button10"
         android:layout_width="wrap_content"
         android:layout_height="75dp"
         android:layout_alignParentStart="true"
@@ -126,7 +136,8 @@
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="25dp"
-        android:text="New Game"
+        android:onClick="startButton"
+        android:text="@string/new_game"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
 </RelativeLayout>
