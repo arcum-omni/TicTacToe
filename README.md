@@ -22,6 +22,5 @@ This project was created in Android Studio 3.6.2
 ![TicTacToeUserInterface](https://user-images.githubusercontent.com/42657915/78998692-fc834f80-7afd-11ea-89e0-f9767af6fc57.jpg)
 
 ## Progress So Far:
-[Issues #1, Create User Interface,](https://github.com/arcum-omni/TicTacToe/issues/1)
-[from the first homework assignment.](https://github.com/arcum-omni/TicTacToe/files/4461986/CPW.252.Spring.2020.Homework.1.pdf)
-![ttt_ui](https://user-images.githubusercontent.com/42657915/79009722-0ebcb800-7b15-11ea-8e26-38ec0dd396ea.jpg)
+This [homework assignment.](https://github.com/arcum-omni/TicTacToe/files/4461986/CPW.252.Spring.2020.Homework.1.pdf) is complete.
+![gameComplete](https://user-images.githubusercontent.com/42657915/82574100-782fdd80-9b3b-11ea-98fb-694946616233.jpg)
