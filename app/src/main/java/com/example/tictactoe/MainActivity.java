@@ -57,8 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 if (v == buttons[rows][cols] && buttons[rows][cols].getText() == "") {
                     buttons[rows][cols].setText(currPlayer.playerName);
                 }
-                else if(v == buttons[rows][cols] && buttons[rows][cols].getText() == "X" ||
-                        v == buttons[rows][cols] && buttons[rows][cols].getText() == "O"){
+                else if(v == buttons[rows][cols] && buttons[rows][cols].getText() != "") {
                     swapPlayerTurn();
                 }
             }
