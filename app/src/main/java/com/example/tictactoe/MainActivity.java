@@ -2,7 +2,6 @@ package com.example.tictactoe;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -58,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
                 if (v == buttons[rows][cols] && buttons[rows][cols].getText() == "") {
                     buttons[rows][cols].setText(currPlayer.playerName);
                 }
+                else if(v == buttons[rows][cols] && buttons[rows][cols].getText() == "X" ||
+                        v == buttons[rows][cols] && buttons[rows][cols].getText() == "O"){
+                    swapPlayerTurn();
+                }
             }
         }
 
@@ -74,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         else {
+            // button logic here
             swapPlayerTurn();
         }
     }
